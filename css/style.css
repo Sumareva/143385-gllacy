@@ -1,5 +1,149 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("local");
+  src: url("../fonts/web/roboto.woff") format("woff");
+  src: url("../fonts/web/roboto.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("local");
+  src: url("../fonts/web/robotobold.woff") format("woff");
+  src: url("../fonts/web/robotobold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("local");
+  src: url("../fonts/web/robotomedium.woff") format("woff");
+  src: url("../fonts/web/robotomedium.woff2") format("woff2");
+  font-weight: 300;
+}
 body {
-  background-color: #849d8f;
+    font-family: "Roboto";
+    background-color: #849d8f;
   padding: 0;
   margin: 0;
+}
+
+main,
+header,
+footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.banner {
+  width: 560px;
+  height: 220px;
+}
+
+.banner--raspberry {
+  background: url("../img/raspberry-bg-1200.jpg") center no-repeat;
+}
+
+.banner--chocolate {
+  background: url("../img/chocolate-bg-1200.jpg") center no-repeat;
+}
+
+.post-preview {
+  background: url("../img/strawberry-bg-1200.jpg") center no-repeat;
+}
+
+.subscribe {
+  background: url("../img/mailing-bg.svg") center no-repeat;
+}
+
+.about-us {
+  background: url("../img/waffle-bg-1200.jpg") center repeat;
+}
+
+/*.Подложка (enter) {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+  position: absolute;
+  left: 790px;
+  top: 207px;
+  width: 100px;
+  height: 44px;
+  z-index: 235;
+}
+
+
+.Подложка (rasberry) {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  opacity: 0.988;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  position: absolute;
+  left: 401px;
+  top: 807px;
+  width: 165px;
+  height: 46px;
+  z-index: 169;
+}
+
+
+.Подложка (chocolate) {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  opacity: 0.988;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  position: absolute;
+  left: 963px;
+  top: 807px;
+  width: 189px;
+  height: 45px;
+  z-index: 160;
+}
+
+
+.Подложка (strawberry) {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  position: absolute;
+  left: 1018px;
+  top: 1759px;
+  width: 129px;
+  height: 44px;
+  z-index: 107;
+}
+.Подложка {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  position: absolute;
+  left: 896px;
+  top: 2176px;
+  width: 252px;
+  height: 44px;
+  z-index: 90;
+}
+
+.Подложка {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  position: absolute;
+  left: 460px;
+  top: 542px;
+  width: 280px;
+  height: 64px;
+  z-index: 40;
 }

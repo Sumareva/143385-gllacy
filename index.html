@@ -40,9 +40,25 @@
           </li>
         </ul>
         <ul class="main-nav__list user-nav">
-          <li class="user-nav__search">Поиск</li>
-          <li class="user-nav__login">Вход</li>
-          <li class="user-nav__cart">Пусто</li>
+          <li class="user-nav__search">
+            <a href="" class="">Поиск</a>
+            <input type="search" name="search" id="search" placeholder="Что ищем?">
+          </li>
+          <li class="user-nav__enter">
+            <a href="" class="">Вход</a>
+            <form class="user" method="get" action="https://echo.htmlacademy.ru">
+              <p><label for="user-login" class="visually-hidden">Логин</label>
+              <input type="email" name="user-login" id="user-login" placeholder="Электронная почта"></p>
+              <p><label for="user-password" class="visually-hidden">Пароль</label>
+              <input type="password" name="user-password" id="user-password" placeholder="Пароль"></p>
+              <button type="submit" class="button">Войти</button>
+              <a href="" class="">Забыли пароль?</a>
+              <a href="" class="">Новая регистрация</a>
+            </form>
+          </li>
+          <li class="user-nav__cart">
+            <a href="">Пусто</a>
+          </li>
         </ul>
       </nav>
       <div class="page-header__work-info">С 10 до 20, ежедневно 8 812 450-25-25</div>
@@ -64,24 +80,36 @@
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="bestsellers__list">
           <li class="bestsellers__item product">
-            <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <b>310 <span>/кг</span></b>
-            <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+            <a href="" class="button">Быстрый просмотр</a>
+            <div class="product__content">
+              <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <b>310 <span>/кг</span></b>
+              <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+            </div>
           </li>
           <li class="bestsellers__item product">
-            <img src="img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <b>380 <span>/кг</span></b>
-            <p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+            <a href="" class="button">Быстрый просмотр</a>
+            <div class="product__content">
+              <img src="img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+              <b>380 <span>/кг</span></b>
+              <p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+            </div>
           </li>
           <li class="bestsellers__item product">
-            <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <b>355 <span>/кг</span></b>
-            <p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+            <a href="" class="button">Быстрый просмотр</a>
+            <div class="product__content">
+              <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <b>355 <span>/кг</span></b>
+              <p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+            </div>
           </li>
           <li class="bestsellers__item product">
-            <img src="img/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <b>415 <span>/кг</span></b>
-            <p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+            <a href="" class="button">Быстрый просмотр</a>
+            <div class="product__content">
+              <img src="img/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+              <b>415 <span>/кг</span></b>
+              <p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+            </div>
           </li>
         </ul>
       </section>
@@ -104,12 +132,12 @@
       <section class="subscribe banner">
         <h2 class="visually-hidden">Подписка на рассылку рецептов</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <input type="email" name="email" id="email">
+        <input type="email" name="subscribe-email" id="subscribe-email">
         <button type="submit" class="btn">Отправить</button>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <map>
+        <map name="adress">
           <img src="img/map.png" width="1200" height="430" alt="Адрес офиса и офлайн-магазина">
         </map>
         <div class="contacts">
@@ -117,41 +145,63 @@
           <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
           <p>Для заказов по телефону:</p>
           <p>8 812 450-25-25 (с 10 до 20 ежедневно)</p>
-          <a class="btn" href="#">Форма обратной связи</a>
+          <div class="feedback">
+            <a class="btn" href="#">Форма обратной связи</a>
+            <form class="feedback__form" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset>
+                <legend>Мы обязательно вам ответим!</legend>
+                <p><label for="feedback-name" class="visually-hidden">Как вас зовут?</label>
+                <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?"></p>
+                <p><label for="feedback-email" class="visually-hidden">Ваша почта для ответа?</label>
+                <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"></p>
+                <p><label for="feedback-comment" class="visually-hidden">Напишите что-нибудь...</label>
+                <textarea name="feedback-comment" id="feedback-comment" rows="5">Напишите что-нибудь...</textarea></p>
+              </fieldset>
+              <button class="button">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__social">
-          <ul>
-            <li>
-              <a href="" class="social social--tw">Twitter</a>
-            </li>
-            <li>
-              <a href="" class="social social--ig">Instagram</a>
-            </li>
-            <li>
-              <a href="" class="social social--fb">Facebook</a>
-            </li>
-            <li>
-              <a href="" class="social social--vk">Vkontakte</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__info">
-          <ul>
-            <li><a>Для поставщиков</a></li>
-            <li><a>О производстве</a></li>
-            <li><a>Наши документы</a></li>
-            <li><a>Экологические стандарты</a></li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" width="140" height="50" alt="HTML Academy">
-            <p>Сделано в HTML Academy © 2017</p>
-          </a>
-        </div>
-      </footer>
-    </body>
-  </html>
+      <div class="page-footer__social">
+        <ul>
+          <li>
+            <a href="" class="social social--tw">Twitter</a>
+          </li>
+          <li>
+            <a href="" class="social social--inst">Instagram</a>
+          </li>
+          <li>
+            <a href="" class="social social--fb">Facebook</a>
+          </li>
+          <li>
+            <a href="" class="social social--vk">Vkontakte</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__info">
+        <ul>
+          <li>
+            <a href="">Для поставщиков</a>
+          </li>
+          <li>
+            <a href="">О производстве</a>
+          </li>
+          <li>
+            <a href="">Наши документы</a>
+          </li>
+          <li>
+            <a href="">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="140" height="50" alt="HTML Academy">
+          <p>Сделано в HTML Academy © 2017</p>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
