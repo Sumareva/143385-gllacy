@@ -44,6 +44,11 @@ ul {
   margin: 0;
 }
 
+input,
+textarea {
+  outline: none;
+}
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -112,16 +117,13 @@ img {
   width: 560px;
   margin-right: 26px;
 }
-/*.site-nav__sub-menu,
-.search-form,
-.user {
-  display: none;
-}*/
+
 .page-header__logo {
   margin-right: 10px;
   width: 154px;
   height: 64px;
 }
+
 .main-nav__item {
   padding: 7px 13px 3px;
   position: relative;
@@ -141,7 +143,7 @@ img {
 }
 .main-nav__item:hover > a,
 .main-nav__item:hover .user-nav__item a,
-.main-nav__item:active a,
+.main-nav__item:active .user-nav__item a,
 .main-nav__item:focus a
 {
   color: #323232;
@@ -155,8 +157,6 @@ img {
 
 .site-nav__sub-item {
   font-weight: normal;
-  /*font-size: 14px;
-  line-height: 16px;*/
   color: #323232;
   padding: 8px 18px;
   display:block;
@@ -190,7 +190,7 @@ img {
 .site-nav__sub-list {
   background-color: #f8f7f4;
   box-sizing: border-box;
-
+  border-radius: 5px;
 }
 
 .site-nav__catalog:hover > .site-nav__sub-menu {
@@ -282,30 +282,6 @@ background-color: #fbded7;
   padding-right: 17px;
 }
 
-/*.user-nav__cart::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 21px;
-  width: 16px;
-  height: 18px;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.inner-wrapper .user-nav__cart::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 18px;
-  width: 21px;
-  height: 20px;
-  background-image: url("../img/icon-cart-full.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
-
 input[type="search"],
 input[type=email],
 input[type=password],
@@ -329,24 +305,25 @@ input[type="search"]:hover,
 input[type=email]:hover,
 input[type=password]:hover,
 input[type=text]:hover,
-textarea:hover,
-input[type="search"]:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=text]:focus,
-textarea:focus {
+textarea:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
   border-radius: 5px;
+  padding: 9px 13px;
 }
 
 input[type="search"]:active,
 input[type=email]:active,
 input[type=password]:active,
 input[type=text]:active,
-textarea:active {
+textarea:active,
+input[type="search"]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=text]:focus,
+textarea:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
   border-radius: 5px;
-  outline: none;
+  padding: 9px 13px;
 }
 
 
@@ -360,7 +337,6 @@ textarea:active {
   display: none;
   min-height: 84px;
   border-radius: 5px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: transparent;
   top: 19px;
   padding: 19px 0px 0px 0px;
@@ -380,6 +356,7 @@ textarea:active {
   min-height: 84px;
   background-color: #f8f7f4;
   border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .user p {
@@ -387,8 +364,8 @@ textarea:active {
 }
 
 .user input {
-  width:100%;
-  padding: 10px 31px 10px 9px;
+  width: 237px;
+  padding: 10px 14px;
 }
 
 .user__links {
@@ -400,6 +377,7 @@ textarea:active {
   background-color: #f8f7f4;
   padding-bottom: 17px;
   border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .search-form p {
@@ -420,6 +398,7 @@ textarea:active {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .user-nav__search:hover > .search {
@@ -574,9 +553,6 @@ textarea:active {
 .product:hover .button--product {
   display: block;
 }
-/*.product:hover .site-link--product {
-  display: block;
-}*/
 
 .button--banner {
   position: absolute;
@@ -710,7 +686,6 @@ textarea:active {
   margin-bottom: 27px;
   font-size: 60px;
   line-height: 60px;
-  /*font-weight: bold;*/
 }
 
 
@@ -1094,8 +1069,8 @@ fieldset {
 }
 
 .social:active  {
-  background: rgba(255, 255, 255, 0.7);
-
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
 }
 
 .page-footer__social li {
@@ -1129,7 +1104,6 @@ fieldset {
 .map {
   width: 100%;
   height: 430px;
- /* background: url(../img/map.png) no-repeat;*/
   background-position: 10% 51%;
   position: relative;
   overflow: hidden;
@@ -1451,6 +1425,12 @@ fieldset {
    background: url("../img/icon-right-small.svg") center no-repeat;
 }
 
+.paginator .current {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
 .paginator .prev {
   opacity: 0.2;
   transform: rotate(180deg);
@@ -1494,10 +1474,6 @@ fieldset {
   border-radius: 15px;
   padding: 15px 25px 25px;
   z-index: 20;
-  /*-webkit-animation-name: slow;
-  animation-name: slow;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;*/
 }
 
 .modal-feedback__show {
