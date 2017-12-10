@@ -659,6 +659,10 @@ textarea:focus {
   cursor: pointer;
 }
 
+.slide {
+  display: none;
+}
+
 .slider-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/ice-cream-bg-1.png");
@@ -674,13 +678,13 @@ textarea:focus {
   background-image: url("../img/ice-cream-bg-3.png");
 }
 
-.slider-1:checked ~ .site-wrapper .slide-1,
-.slider-2:checked ~ .site-wrapper .slide-2,
-.slider-3:checked ~ .site-wrapper .slide-3 {
+.slider-1:checked ~ .site-wrapper .slide--1,
+.slider-2:checked ~ .site-wrapper .slide--2,
+.slider-3:checked ~ .site-wrapper .slide--3 {
   display: block;
 }
 
-.slider:checked ~ .site-wrapper label[for="product-1"],
+.slider-1:checked ~ .site-wrapper label[for="product-1"],
 .slider-2:checked ~ .site-wrapper label[for="product-2"],
 .slider-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
@@ -729,9 +733,7 @@ textarea:focus {
   list-style: none;
 }
 
-.slide {
-  display: none;
-}
+
 
 .slide-title {
   width: 700px;
