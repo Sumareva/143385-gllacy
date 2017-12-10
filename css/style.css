@@ -663,6 +663,34 @@ textarea:focus {
   display: none;
 }
 
+.slider {
+  position: relative;
+  padding-top: 317px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.slider__title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60.35px;
+}
+
 .slider-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/ice-cream-bg-1.png");
@@ -719,40 +747,8 @@ textarea:focus {
   line-height: 16px;
 }
 
-.slider {
-  position: relative;
-  padding-top: 317px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.slider-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-
-
-.slide-title {
-  width: 700px;
-  margin: 0 auto;
-  margin-bottom: 27px;
-  font-size: 60px;
-  line-height: 60px;
-}
-
-
-.slider__title {
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 60.35px;
-}
-
 .site-link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-
 }
 
 .site-link--product {
