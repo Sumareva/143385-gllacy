@@ -659,30 +659,30 @@ textarea:focus {
   cursor: pointer;
 }
 
-#product-1:checked ~ .site-wrapper {
+.slider-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/ice-cream-bg-1.png");
 }
 
-#product-2:checked ~ .site-wrapper {
+.slider-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/ice-cream-bg-2.png");
 }
 
-#product-3:checked ~ .site-wrapper {
+.slider-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/ice-cream-bg-3.png");
 }
 
-#product-1:checked ~ .site-wrapper #slide1,
-#product-2:checked ~ .site-wrapper #slide2,
-#product-3:checked ~ .site-wrapper #slide3 {
+.slider-1:checked ~ .site-wrapper .slide-1,
+.slider-2:checked ~ .site-wrapper .slide-2,
+.slider-3:checked ~ .site-wrapper .slide-3 {
   display: block;
 }
 
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+.slider:checked ~ .site-wrapper label[for="product-1"],
+.slider-2:checked ~ .site-wrapper label[for="product-2"],
+.slider-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
 
@@ -1182,6 +1182,10 @@ fieldset {
   overflow: hidden;
   margin-top: 38px;
   background: url("../img/map-with-pin.png") 10% 51% no-repeat;
+}
+
+iframe {
+  width: 100%;
 }
 
 .btn-delete {
