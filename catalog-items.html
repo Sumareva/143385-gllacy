@@ -12,7 +12,7 @@
         <header class="page-header">
           <nav class="main-nav">
             <a class="page-header__logo" href="index.html">
-              <img src="img/Logo.svg" width="160" height="70" alt="Логотип Gllacy Shop">
+              <img src="img/Logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
             </a>
             <ul class="main-nav__list site-nav">
               <li class="site-nav__catalog main-nav__item  opened">
@@ -154,7 +154,7 @@
           <section class="filters">
             <h2 class="visually-hidden">Выбор мороженого по параметрам</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-              <fieldset class="filters__item">
+              <fieldset class="filters__item fields-list">
                 <legend class="filters__title">Сортировка:</legend>
                 <select name="sort">
                   <option value="popular">по популярности</option>
@@ -163,16 +163,16 @@
                   <option value="fat-content">по жирности</option>
                 </select>
               </fieldset>
-              <fieldset class="filters__item">
+              <fieldset class="filters__item fields-list">
                 <legend class="filters__title">Цена: 100 руб. – 500 руб.</legend>
                 <div class="scale filters__container">
                   <div class="scale__bar"></div>
                   <div class="scale__segment"></div>
-                  <button class="scale__toggle scale__toggle--min"></button>
-                  <button class="scale__toggle scale__toggle--max"></button>
+                  <button type="button" class="scale__toggle scale__toggle--min"></button>
+                  <button type="button" class="scale__toggle scale__toggle--max"></button>
                 </div>
               </fieldset>
-              <fieldset class="filters__item">
+              <fieldset class="filters__item fields-list">
                 <legend class="filters__title">Жирность:</legend>
                 <div class="filters__container">
                   <input type="radio" name="fat" id="fat-0" value="0"><label for="fat-0">0%</label>
@@ -181,7 +181,7 @@
                   <input type="radio" name="fat" id="fat-min-30" value="min-30"><label for="fat-min-30">выше 30%</label>
                 </div>
               </fieldset>
-              <fieldset class="filters__item">
+              <fieldset class="filters__item fields-list">
                 <legend class="filters__title">Наполнители:</legend>
                 <div class="filters__container">
                   <input type="checkbox" name="filler1" id="chocolate" value="chocolate" checked><label for="chocolate">шоколадные</label>
@@ -342,7 +342,9 @@
           </div>
           <div class="page-footer__copyright">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="HTML Academy">
+              <img src="img/logo-htmlacademy.svg" width="108" height="39" class="page-footer__image" alt="HTML Academy">
+            </a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="site-link">
               <p>Сделано в HTML Academy © 2017</p>
             </a>
           </div>
