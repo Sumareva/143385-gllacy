@@ -275,7 +275,10 @@ background-color: #fbded7;
 
 .main-nav__item:hover > .color-hover path,
 .main-nav__item:hover > .color-hover circle,
-.main-nav__item:hover > .color-hover polygon {
+.main-nav__item:hover > .color-hover polygon,
+.main-nav__item:focus > .color-hover path,
+.main-nav__item:focus > .color-hover circle,
+.main-nav__item:focus > .color-hover polygon {
   fill: #323232;
 }
 
@@ -1379,11 +1382,6 @@ textarea:focus {
 .scale__toggle--min:focus,
 .scale__toggle--min:active {
   left: 34px;
-}
-
-.filters__item input[type="radio"],
-.filters__item input[type="checkbox"] {
-  display: none;
 }
 
 .filters__item input[type="radio"]+label {
